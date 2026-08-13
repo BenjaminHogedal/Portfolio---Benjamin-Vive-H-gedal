@@ -25,14 +25,14 @@
 
     <main class="about-page-main">
       <section class="about-showcase-page reveal" aria-label="Om mig galleri">
-        <div class="about-showcase-shell reveal">
-          <header class="about-hero-header">
+        <div class="about-showcase-shell">
+          <header class="about-hero-header reveal reveal-left">
             <h2 class="about-showcase-title">Benjamin Høgedal</h2>
             <p class="about-intro">
               Jeg er multimediedesigner studerende på erhvervsakademi i Aarhus
             </p>
           </header>
-          <div class="about-intro-layout">
+          <div class="about-intro-layout reveal reveal-right">
             <div class="about-showcase-gallery single-image-gallery">
               <img
                 src="Images/Img_4959-kopi.png"
@@ -61,12 +61,9 @@
             </div>
           </div>
 
-          <section
-            class="about-story reveal"
-            aria-labelledby="about-story-title"
-          >
-            <div class="about-story-layout">
-              <div class="about-story-copy">
+          <section class="about-story" aria-labelledby="about-story-title">
+            <div class="about-story-layout reveal">
+              <div class="about-story-copy reveal reveal-left">
                 <h3 id="about-story-title" class="about-story-title">
                   Hvem er jeg?
                 </h3>
@@ -90,9 +87,12 @@
                 </p>
               </div>
 
-              <div class="about-story-gallery" aria-label="Galleri af billeder">
+              <div
+                class="about-story-gallery reveal reveal-right"
+                aria-label="Galleri af billeder"
+              >
                 <img
-                  src="Images/jeppeogjeg.png"
+                  src="Images/kunmig.png"
                   alt="Jeppe og jeg"
                   class="story-gallery-photo"
                 />
@@ -113,7 +113,36 @@
                 />
               </div>
             </div>
-            <div class="about-timeline-wrap" aria-label="Tidslinje">
+            <div class="about-workflow-section reveal">
+              <div class="about-workflow-image-wrap reveal reveal-left">
+                <img
+                  src="Images/setup.png"
+                  alt="Setup"
+                  class="about-workflow-image"
+                />
+              </div>
+              <div class="about-workflow-copy reveal reveal-right">
+                <h3 class="about-workflow-title">Min nysgerrighed</h3>
+                <p>
+                  Jeg er nysgerrig af natur og kan godt lide at udforske nye
+                  idéer, værktøjer og måder at løse ting på. Hvis jeg støder på
+                  noget, jeg ikke forstår, får jeg som regel lyst til at finde
+                  ud af, hvordan det fungerer, frem for bare at gå videre.
+                </p>
+                <p>
+                  Det er også noget af det, jeg godt kan lide ved
+                  multimediedesign. Der er hele tiden nye muligheder at
+                  udforske, og jeg bliver motiveret af at prøve mig frem, lære
+                  undervejs og udfordre det, jeg allerede kan. For mig er det
+                  ofte nysgerrigheden, der gør, at en simpel idé udvikler sig
+                  til noget bedre.
+                </p>
+              </div>
+            </div>
+            <div
+              class="about-timeline-wrap reveal reveal-left"
+              aria-label="Tidslinje"
+            >
               <img
                 src="Images/tidslinje.png"
                 alt="Tidslinje over Benjamin Høgedal"
