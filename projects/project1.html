@@ -22,100 +22,230 @@
         </nav>
       </div>
     </header>
-    <main class="container project-page">
-      <aside class="project-left">
-        <img
-          src="../Images/LynkLogo.png"
-          alt="Lynk logo"
-          style="width: 84px; display: block; margin-bottom: 8px"
-        />
-        <p class="project-link-label">Live side</p>
-        <a
-          href="https://benjaminknudsen.github.io/web-app-lynk---den-rigtige/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-link"
-        >
-          Klik her
-        </a>
+    <main class="container project-page project-page-editorial reveal">
+      <aside class="project-left project-left-editorial reveal-left">
+        <span class="project-meta">WEB APP</span>
         <h2>Lynk</h2>
 
         <p class="muted project-intro">
-          Lynk er en app, der gør det nemt at finde og deltage i spontane,
-          sociale aktiviteter i nærheden. Idéen er at samle folk om alt fra en
-          gåtur til en fodboldkamp. Appen henvender sig til alle, der gerne vil
-          være mere sociale i hverdagen.
-        </p>
-
-        <h3 class="project-problem">Problem</h3>
-        <p class="muted project-problem">
-          Mange vil gerne være mere spontant sociale, men ved sjældent hvem de
-          kan lave noget med her og nu. Der findes ikke et oplagt sted at finde
-          nogen at deltage sammen med, når lysten pludselig opstår. Resultatet
-          er, at gode idéer om at mødes ofte ender med ikke at blive til noget.
-        </p>
-
-        <h3 class="project-solution">Løsning</h3>
-        <p class="muted project-solution">
-          Vi lavede en app, hvor man med få klik kan oprette eller finde events
-          i sit lokalområde. Brugeren kan hurtigt se, hvad der sker i nærheden,
-          og melde sig til med det samme. Vi lagde vægt på at gøre det så enkelt
-          som muligt at komme fra idé til at møde nogen i virkeligheden.
+          En social platform, der samler mennesker om spontane sportsaktiviteter
+          og gør det nemt at finde nogen at være aktiv med.
         </p>
       </aside>
 
-      <section class="project-right">
-        <div class="image-panel">
+      <section
+        class="project-visual project-visual-editorial reveal reveal-right"
+        aria-label="Lynk showcase"
+      >
+        <div>
           <img
-            src="../Images/homepagelynk.jpg"
-            alt="Lynk - homepage"
-            class="project-image"
+            src="../Images/lynk1.png"
+            alt="Lynk produktbillede"
+            class="project-feature-visual"
           />
-        </div>
-        <div class="image-panel">
-          <img
-            src="../Images/Styletile.png"
-            alt="Lynk style tile"
-            class="project-image"
-          />
-        </div>
-        <div class="image-panel">
-          <img
-            src="../Images/logoogfarvepalet.png"
-            alt="Lynk logo and colour palette"
-            class="project-image"
-          />
-        </div>
-        <div class="image-panel">
-          <img
-            src="../Images/lowfidelityskitser.png"
-            alt="Lynk low fidelity sketches"
-            class="project-image"
-          />
-        </div>
-        <div class="image-panel">
-          <img
-            src="../Images/onboarding1.png"
-            alt="Lynk onboarding step 1"
-            class="project-image"
-          />
-        </div>
-        <div class="image-panel">
-          <img
-            src="../Images/onboarding2.png"
-            alt="Lynk onboarding step 2"
-            class="project-image"
-          />
-        </div>
-        <div class="image-panel">
-          <img
-            src="../Images/eventdetaljeside.png"
-            alt="Lynk event detail page"
-            class="project-image"
-          />
+          <p class="project-link-label">Live side</p>
+          <a
+            href="https://benjaminknudsen.github.io/web-app-lynk---den-rigtige/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            Klik her
+          </a>
         </div>
       </section>
     </main>
+
+    <section class="container project-story reveal reveal-left">
+      <div class="project-story-visual">
+        <img
+          src="../Images/lynk2.png"
+          alt="Lynk app interface"
+          class="project-story-image"
+        />
+      </div>
+
+      <div class="project-story-copy">
+        <h3>Om Projektet</h3>
+        <p>
+          Lynk er en social webapp, som jeg var med til at udvikle som
+          eksamensprojekt på multimediedesigneruddannelsen. Idéen bag platformen
+          er at gøre det nemmere at være spontan og finde andre mennesker at
+          dyrke sport med – uden at det nødvendigvis kræver planlægning flere
+          dage i forvejen.
+        </p>
+        <p>
+          Projektet tager udgangspunkt i interessen for sport og de sociale
+          fællesskaber, der opstår, når mennesker mødes gennem fysisk aktivitet.
+          Med Lynk kan brugeren hurtigt se, hvilke aktiviteter der sker i
+          nærheden, finde noget, der passer til tid og interesse, og spontant
+          vælge at deltage.
+        </p>
+        <p>
+          Brugerne kan udforske og filtrere sportsaktiviteter efter deres
+          præferencer, tilmelde sig eksisterende events eller selv oprette nye
+          arrangementer. Lynk blev udviklet som en single-page application i
+          React med Supabase som database, hvor vi arbejdede med hele processen
+          fra research og UX/UI-design til udvikling og den færdige løsning.
+        </p>
+      </div>
+    </section>
+
+    <section class="container project-process reveal reveal-left">
+      <h3>Proces</h3>
+
+      <div class="project-process-grid">
+        <figure class="project-process-item">
+          <img src="../Images/lynk3.png" alt="Lynk brainstorm og research" />
+          <span class="process-number">1</span>
+          <figcaption>Brainstorm og Research</figcaption>
+        </figure>
+        <figure class="project-process-item">
+          <img src="../Images/lynk4.png" alt="Lynk skitser" />
+          <span class="process-number">2</span>
+          <figcaption>Skitser</figcaption>
+        </figure>
+        <figure class="project-process-item">
+          <img src="../Images/lynk5.png" alt="Lynk klikbar prototype" />
+          <span class="process-number">3</span>
+          <figcaption>Klikbar prototype</figcaption>
+        </figure>
+        <figure class="project-process-item">
+          <img
+            src="../Images/lynk6.png"
+            alt="Lynk test på den færdige løsning"
+          />
+          <span class="process-number">4</span>
+          <figcaption>Test på den færdige løsning</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container project-product reveal reveal-left">
+      <div class="project-product-visual">
+        <div class="project-product-carousel" data-active="0">
+          <div class="project-product-viewport">
+            <button
+              class="project-product-arrow project-product-arrow-prev"
+              type="button"
+              aria-label="Vis forrige billede"
+            >
+              ←
+            </button>
+
+            <div class="project-product-frame">
+              <div class="project-product-stack" aria-live="polite">
+                <img
+                  class="project-product-base is-visible"
+                  src="../Images/lynk7.png"
+                  alt="Lynk produkt"
+                  data-slide="0"
+                />
+                <img
+                  class="project-product-overlay"
+                  src="../Images/lynk8.png"
+                  alt="Lynk opret event"
+                  data-slide="1"
+                />
+                <img
+                  class="project-product-overlay project-product-overlay--third"
+                  src="../Images/lynk9.png"
+                  alt="Lynk beskeder"
+                  data-slide="2"
+                />
+                <img
+                  class="project-product-overlay"
+                  src="../Images/lynk10.png"
+                  alt="Lynk profil"
+                  data-slide="3"
+                />
+              </div>
+            </div>
+
+            <button
+              class="project-product-arrow project-product-arrow-next"
+              type="button"
+              aria-label="Vis næste billede"
+            >
+              →
+            </button>
+          </div>
+
+          <div class="project-product-dots" aria-label="Billedesekvens">
+            <button
+              class="project-product-dot is-active"
+              type="button"
+              data-index="0"
+              aria-label="Vis Mine events"
+            ></button>
+            <button
+              class="project-product-dot"
+              type="button"
+              data-index="1"
+              aria-label="Vis Opret event"
+            ></button>
+            <button
+              class="project-product-dot"
+              type="button"
+              data-index="2"
+              aria-label="Vis Beskeder"
+            ></button>
+            <button
+              class="project-product-dot"
+              type="button"
+              data-index="3"
+              aria-label="Vis Profil"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-product-copy">
+        <h3>Produkt</h3>
+        <h4 id="project-product-heading">Mine events</h4>
+        <p id="project-product-text">
+          Mine events giver brugeren et samlet overblik over kommende
+          aktiviteter. Her kan man hurtigt se de events, man selv har oprettet,
+          og dem man deltager i, med relevante informationer som dato,
+          tidspunkt, lokation og antal deltagere.
+        </p>
+      </div>
+    </section>
+
+    <section class="container project-design-system reveal reveal-left">
+      <div class="project-design-system-inner">
+        <h3>Designsystemer</h3>
+        <p>
+          Vores designsystem skaber en ensartet og genkendelig visuel identitet
+          på tværs af Lynk. Farver, logo og typografi er valgt med fokus på at
+          skabe et moderne og energisk udtryk, der understøtter sport,
+          spontanitet og fællesskab.
+        </p>
+        <img src="../Images/lynk12.png" alt="Lynk designsystem" />
+      </div>
+    </section>
+
+    <section class="container project-reflection reveal reveal-left">
+      <div class="project-reflection-inner">
+        <div class="project-reflection-copy">
+          <h3>Refleksion</h3>
+          <p>
+            Projektet har givet mig en større forståelse for, hvordan research,
+            idéudvikling, design og udvikling hænger sammen i arbejdet med at
+            skabe et digitalt produkt. Undervejs har jeg især lært værdien af at
+            teste idéer tidligt og løbende justere løsningen ud fra brugernes
+            behov og feedback. Samtidig har projektet styrket mine kompetencer
+            inden for både UX/UI og frontend-udvikling og givet mig erfaring med
+            at føre en idé hele vejen fra det første koncept til et fungerende
+            produkt.
+          </p>
+        </div>
+
+        <div class="project-reflection-visual">
+          <img src="../Images/lynk11.png" alt="Lynk refleksion" />
+        </div>
+      </div>
+    </section>
 
     <footer id="contact" class="site-footer">
       <div class="container footer-inner">
@@ -159,5 +289,71 @@
         </nav>
       </div>
     </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      const carousel = document.querySelector(".project-product-carousel");
+      const productHeading = document.getElementById("project-product-heading");
+      const productText = document.getElementById("project-product-text");
+      const prevButton = document.querySelector(".project-product-arrow-prev");
+      const nextButton = document.querySelector(".project-product-arrow-next");
+      const dots = document.querySelectorAll(".project-product-dot");
+      const slideImages = document.querySelectorAll(
+        ".project-product-stack img[data-slide]",
+      );
+
+      const slides = [
+        {
+          title: "Mine events",
+          text: "Mine events giver brugeren et samlet overblik over kommende aktiviteter. Her kan man hurtigt se de events, man selv har oprettet, og dem man deltager i, med relevante informationer som dato, tidspunkt, lokation og antal deltagere.",
+        },
+        {
+          title: "Opret event",
+          text: "Opret event gør det nemt for brugeren at starte sin egen aktivitet. Gennem et enkelt trin-for-trin flow vælges sportsgren, tidspunkt, lokation og øvrige detaljer, så et nyt event hurtigt kan deles med andre.",
+        },
+        {
+          title: "Beskeder",
+          text: "Beskeder gør det nemt at kommunikere og koordinere med andre brugere. Her samles både private chats og gruppesamtaler, så det er hurtigt at aftale detaljer og holde kontakten før og efter et event.",
+        },
+        {
+          title: "Profil",
+          text: "Profilen giver brugeren et samlet overblik over sin aktivitet og historik på Lynk. Her vises deltagelse, oprettede events og feedback fra andre, som er med til at skabe tryghed og tillid mellem brugerne.",
+        },
+      ];
+
+      function updateSlide(index) {
+        const safeIndex = (index + slides.length) % slides.length;
+        productHeading.textContent = slides[safeIndex].title;
+        productText.textContent = slides[safeIndex].text;
+        carousel.dataset.active = String(safeIndex);
+
+        slideImages.forEach((image) => {
+          const imageIndex = Number(image.dataset.slide);
+          image.classList.toggle("is-visible", imageIndex === safeIndex);
+        });
+
+        dots.forEach((dot) => {
+          const isActive = Number(dot.dataset.index) === safeIndex;
+          dot.classList.toggle("is-active", isActive);
+          dot.setAttribute("aria-current", isActive ? "true" : "false");
+        });
+      }
+
+      prevButton.addEventListener("click", () => {
+        const currentIndex = Number(carousel.dataset.active);
+        updateSlide(currentIndex - 1);
+      });
+
+      nextButton.addEventListener("click", () => {
+        const currentIndex = Number(carousel.dataset.active);
+        updateSlide(currentIndex + 1);
+      });
+
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          updateSlide(Number(dot.dataset.index));
+        });
+      });
+    </script>
   </body>
 </html>
