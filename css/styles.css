@@ -845,18 +845,17 @@ body {
   border-radius: 18px;
 }
 .project-reflection {
-  margin-top: -60px;
-  padding-top: 0;
+  padding-top: 84px;
   padding-bottom: 32px;
 }
 .project-reflection-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
   gap: 36px;
   align-items: start;
 }
 .project-reflection-copy {
-  max-width: 980px;
+  max-width: 640px;
 }
 .project-reflection-copy h3 {
   margin: 0 0 22px;
@@ -876,14 +875,29 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-top: 14px;
 }
 .project-reflection-visual img {
   display: block;
   width: 100%;
-  max-width: 420px;
+  max-width: 360px;
   height: auto;
   border-radius: 18px;
+}
+.project-reflection--lumina {
+  margin-top: -60px;
+}
+.project-reflection--lumina .project-reflection-inner {
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 36px;
+}
+.project-reflection--lumina .project-reflection-copy {
+  max-width: 980px;
+}
+.project-reflection--lumina .project-reflection-visual {
+  padding-top: 14px;
+}
+.project-reflection--lumina .project-reflection-visual img {
+  max-width: 420px;
 }
 .project-visual-editorial {
   display: flex;
