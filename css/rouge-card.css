@@ -1,0 +1,48 @@
+.rouge-card-media {
+  position: relative;
+  height: 360px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.rouge-card-media .rouge-preview {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+  border: 0;
+  border-radius: 24px;
+  background: transparent;
+  opacity: 0;
+}
+
+.rouge-card-media.is-loaded .rouge-preview {
+  opacity: 1;
+}
+
+.rouge-card-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 8px;
+  background: #E0D6CC;
+  color: #5C4A43;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.rouge-card-placeholder code {
+  color: #1A1A1A;
+  font-size: 0.8rem;
+}
+
+.rouge-card-media.is-loaded .rouge-card-placeholder {
+  display: none;
+}

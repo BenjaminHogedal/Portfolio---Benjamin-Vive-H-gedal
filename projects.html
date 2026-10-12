@@ -6,6 +6,7 @@
     <title>Alle projekter — Benjamin Vive Høgedal</title>
     <link rel="icon" type="image/png" href="Images/bvh.png" />
     <link rel="stylesheet" href="css/styles.css?v=20260813" />
+    <link rel="stylesheet" href="css/rouge-card.css" />
   </head>
   <body>
     <header class="site-header">
@@ -150,6 +151,30 @@
               </div>
             </a>
           </article>
+
+          <article class="project-card">
+            <a class="card-link" href="projects/rouge-again.html">
+              <div class="project-media project-media-single rouge-card-media">
+                <img
+                  src="assets/case3/card-thumb.jpg"
+                  alt="Kampagnebillede for RŌUGE AGAIN med model, RA-monogram og teksten secondhand styles med nyt liv"
+                  class="project-preview rouge-preview"
+                  width="1400"
+                  height="980"
+                  loading="lazy"
+                />
+                <span class="rouge-card-placeholder" aria-hidden="true">Billede mangler<code>card-thumb.jpg</code></span>
+              </div>
+              <div class="project-copy">
+                <div class="project-headline">
+                  <h4 class="project-title-featured">RŌUGE AGAIN</h4>
+                  <span class="project-meta">CASE 3 · BRANDING/UX</span>
+                </div>
+                <p class="project-excerpt">Case 3: Subbrand og digital brugerrejse for LA RŌUGEs secondhand-salg.</p>
+                <span class="project-link">Se projekt →</span>
+              </div>
+            </a>
+          </article>
         </div>
       </section>
     </main>
@@ -195,5 +220,12 @@
         </nav>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll(".rouge-card-media img").forEach((image) => {
+        const markLoaded = () => image.closest(".rouge-card-media").classList.add("is-loaded");
+        if (image.complete && image.naturalWidth > 0) markLoaded();
+        else image.addEventListener("load", markLoaded, { once: true });
+      });
+    </script>
   </body>
 </html>
