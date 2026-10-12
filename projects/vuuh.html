@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Case 2: Vuuh for Shopify — Benjamin Vive Høgedal</title>
+    <meta name="description" content="Case 2 i Product Optimization: UX-audit, redesign og accessibility-check af onboardingen i Vuuh for Shopify." />
+    <link rel="icon" type="image/png" href="../Images/bvh.png" />
+    <link rel="stylesheet" href="../css/styles.css?v=20260813" />
+    <link rel="stylesheet" href="../css/vuuh.css" />
+  </head>
+  <body class="case-vuuh">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand-link" aria-label="Gå til forsiden">
+          <img src="../Images/bvh.png" alt="BVH logo" class="brand-logo" />
+          <span class="brand">Benjamin Vive Høgedal</span>
+        </a>
+        <nav class="site-nav" aria-label="Hovednavigation">
+          <a href="../index.html">Forside</a>
+          <a href="../projects.html">Projekter</a>
+          <a href="../about.html">Om mig</a>
+          <a href="../index.html#contact" class="btn">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="case-vuuh-main">
+      <div class="case-vuuh-container">
+        <section class="vv-hero reveal" aria-labelledby="vv-title">
+          <div class="vv-hero-copy">
+            <img class="vv-logo" src="../Images/vuuh/vuuh-logo.png" alt="Vuuh logo" />
+            <p class="vv-eyebrow">CASE 2 · PRODUCT OPTIMIZATION</p>
+            <h1 id="vv-title">En tydeligere onboarding til Vuuh for Shopify</h1>
+            <p class="vv-lead">Vuuh hjælper fashion-butikker med produktdata og billeder via Shopify. I Case 2 fandt vi ud af, hvor nye kunder går i stå i onboardingen, og redesignede flowet, så de kan forbinde deres Shopify-butik uden personlig hjælp.</p>
+            <ul class="vv-tags" aria-label="Projektområder">
+              <li>UX Audit</li>
+              <li>Interaktionsdesign</li>
+              <li>Accessibility</li>
+              <li>Figma</li>
+            </ul>
+            <!-- Case links: Prototype: https://www.figma.com/proto/PEUH5ns1BrzuNaI75Zu5F5/Vuuh---Case-2---3.sem?node-id=125-6&p=f&viewport=130%2C393%2C0.03&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=125%3A6&page-id=0%3A1 · Figma file: https://www.figma.com/design/PEUH5ns1BrzuNaI75Zu5F5/Vuuh---Case-2---3.sem?node-id=125-6 · PDF: ../docs/vuuh-ux-audit-summary.pdf -->
+            <div class="vv-actions">
+              <a class="vv-button vv-button-primary" href="https://www.figma.com/proto/PEUH5ns1BrzuNaI75Zu5F5/Vuuh---Case-2---3.sem?node-id=125-6&amp;p=f&amp;viewport=130%2C393%2C0.03&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=125%3A6&amp;page-id=0%3A1" target="_blank" rel="noopener">
+                Åbn Figma-prototypen <span aria-hidden="true">↗</span>
+              </a>
+              <a class="vv-button vv-button-secondary" href="https://www.figma.com/design/PEUH5ns1BrzuNaI75Zu5F5/Vuuh---Case-2---3.sem?node-id=125-6" target="_blank" rel="noopener">
+                Åbn Figma-filen <span aria-hidden="true">↗</span>
+              </a>
+              <a class="vv-button vv-button-secondary" href="../docs/vuuh-ux-audit-summary.pdf" target="_blank" rel="noopener">
+                UX Audit Summary (PDF) <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+          <figure class="vv-hero-visual">
+            <div class="vv-browser">
+              <div class="vv-browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="../Images/vuuh/vuuh-back.webp" alt="Vuuh-dashboardet efter onboarding med bekræftelsen Connected to Shopify" />
+            </div>
+            <img class="vv-float" src="../Images/vuuh/vuuh-getstarted.webp" alt="Get started-skærmen med stepperen i fire trin" />
+          </figure>
+        </section>
+
+        <div class="vv-facts reveal" role="group" aria-label="Faktabjælke">
+          <div><small>Case</small><p>Case 2 – Design Better Onboarding</p></div>
+          <div><small>Min rolle</small><p>Analyse og procesdokumentation</p></div>
+          <div><small>Team</small><p>Benjamin, Benjamin, Jarl og Mikkel</p></div>
+          <div><small>Periode</small><p>2 uger · september 2026</p></div>
+        </div>
+      </div>
+
+      <section class="vv-section reveal" aria-labelledby="vv-challenge-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">01 · UDFORDRINGEN</p>
+            <div class="vv-copy">
+              <h2 id="vv-challenge-title">Hjælp Charlotte uden at bremse Emma</h2>
+              <p>Vuuh vil have, at nye kunder kan installere, opsætte og komme i gang helt selv. Udfordringen var at gøre onboardingen tryg for brugere med lidt digital erfaring, uden at gøre den langsom for dem, der kender Shopify i forvejen.</p>
+              <div class="vv-personas">
+                <article class="vv-card">
+                  <p class="vv-pill">Primær persona</p>
+                  <h3>Charlotte</h3>
+                  <p>Har en fysisk butik og en mindre webshop. Har brug for at vide præcis, hvad hun skal gøre.</p>
+                </article>
+                <article class="vv-card">
+                  <p class="vv-pill">Sekundær persona</p>
+                  <h3>Emma</h3>
+                  <p>Kender Shopify og apps. Vil hurtigt videre uden lange forklaringer.</p>
+                </article>
+              </div>
+              <aside class="vv-role">
+                <h3>Mit bidrag</h3>
+                <p>Vi arbejdede sammen om hele forløbet. Jeg stod primært for at dokumentere og strukturere processen i Figma: HE-observationskort, Cognitive Walkthrough, syntesen fra observationer til fund, vores Finding Cards samt arbejdet med at forme rejsen og accessibility-checket.</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vv-section vv-tint reveal" aria-labelledby="vv-research-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">02 · UNDERSØGELSE</p>
+            <div class="vv-copy">
+              <h2 id="vv-research-title">Tre spørgsmål skabte usikkerhed</h2>
+              <p>Vi gennemgik det eksisterende flow med Heuristic Evaluation ud fra Nielsens 10 heuristikker og med Cognitive Walkthrough, hvor vi fulgte Charlotte trin for trin gennem opgaven "forbind din Shopify-butik". Vi samlede fire HE-observationer og én CW-observation, grupperede dem og fandt tre underliggende problemer.</p>
+            </div>
+          </div>
+          <div class="vv-methods" aria-label="Metoder">
+            <span>Heuristic Evaluation</span><b aria-hidden="true">+</b>
+            <span>Cognitive Walkthrough</span><b aria-hidden="true">→</b>
+            <span>Syntese</span><b aria-hidden="true">→</b>
+            <span>3 Finding Cards</span>
+          </div>
+          <div class="vv-findings">
+            <article class="vv-finding vv-card">
+              <figure class="vv-finding-shot"><img src="../Images/vuuh/vuuh-original-dashboard.webp" alt="Det oprindelige Vuuh-dashboard med flere handlinger på én gang" /></figure>
+              <p class="vv-caption">Det oprindelige dashboard</p>
+              <div class="vv-finding-copy"><span class="vv-index">1</span><h3>Hvad skal jeg gøre?</h3><p>Dashboardet viser flere handlinger på én gang uden rækkefølge, og på Outputs-siden drukner Shopify blandt andre integrationer.</p><p class="vv-source">HE #6 + CW · Høj prioritet</p></div>
+            </article>
+            <article class="vv-finding vv-card">
+              <figure class="vv-finding-shot"><img src="../Images/vuuh/vuuh-original-shopify-domains.webp" alt="Shopifys domæneside med flere forskellige domæner" /></figure>
+              <p class="vv-caption">Domæner i Shopify</p>
+              <div class="vv-finding-copy"><span class="vv-index">2</span><h3>Har jeg valgt det rigtige?</h3><p>Vuuh beder om et "Shop name", men Shopify viser flere forskellige domæner, og det er uklart, hvilket der menes.</p><p class="vv-source">HE #2 + #4 · Høj prioritet</p></div>
+            </article>
+            <article class="vv-finding vv-card">
+              <figure class="vv-finding-shot"><img src="../Images/vuuh/vuuh-original-success.webp" alt="Den oprindelige side efter Shopify-forbindelsen uden tydelig bekræftelse" /></figure>
+              <p class="vv-caption">Den oprindelige success-side</p>
+              <div class="vv-finding-copy"><span class="vv-index">3</span><h3>Lykkedes det?</h3><p>Efter forbindelsen er der ingen tydelig bekræftelse på, at butikken er forbundet, eller hvad der skal ske nu.</p><p class="vv-source">HE #1 · Høj prioritet</p></div>
+            </article>
+          </div>
+          <p class="vv-summary">Alle tre fik høj prioritet, fordi de ligger i den centrale opgave: at få forbundet butikken. Fund 1 er det stærkeste, fordi både HE og CW peger på det.</p>
+          <section class="vv-process" aria-labelledby="vv-process-title">
+            <h3 id="vv-process-title">Fra observation til fund</h3>
+            <div class="vv-gallery">
+              <figure><img src="../Images/vuuh/vuuh-proces-he-kort.webp" alt="Fire HE-observationskort i Figma" /><figcaption>HE-observationskort</figcaption></figure>
+              <figure><img src="../Images/vuuh/vuuh-proces-syntese.webp" alt="Syntesetavle hvor observationer grupperes, navngives og udvælges" /><figcaption>Syntese: gruppér, navngiv, udvælg</figcaption></figure>
+              <figure><img src="../Images/vuuh/vuuh-proces-finding-card.webp" alt="Finding Card 1 om uklar retning gennem onboarding" /><figcaption>Finding Card 1</figcaption></figure>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="vv-section reveal" aria-labelledby="vv-solution-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">03 · LØSNING</p>
+            <div class="vv-copy">
+              <h2 id="vv-solution-title">Ét designvalg til hvert fund</h2>
+              <p>Vi overvejede flere onboardingmønstre, bl.a. checkliste og product tour, men valgte en guidet trin-for-trin-model kombineret med hjælp i konteksten og forslag til næste skridt. Vi skitserede først flowet i low-fi og byggede det derefter i Figma.</p>
+            </div>
+          </div>
+          <figure class="vv-wide">
+            <img src="../Images/vuuh/vuuh-proces-lowfi.webp" alt="Low-fi-skitse af onboardingflowet i otte trin" />
+            <figcaption>Low-fi-skitse af onboardingflowet</figcaption>
+          </figure>
+          <div class="vv-choices">
+            <article class="vv-choice reveal reveal-left">
+              <div><p class="vv-choice-label">Løser fund 1</p><h3>Synlig progression</h3><p>En stepper med fire trin – Get started, Shopify, Setup og Done – viser, hvor brugeren er, og hvad der kommer. Der er kun én primær knap pr. skærm.</p><p class="vv-norman">Norman: conceptual model · gulf of execution</p></div>
+              <figure class="vv-choice-image"><img src="../Images/vuuh/vuuh-getstarted.webp" alt="Get started-skærmen med stepper og én primær knap" /></figure>
+            </article>
+            <article class="vv-choice vv-choice-flip reveal reveal-right">
+              <div><p class="vv-choice-label">Løser fund 2</p><h3>Hjælp i konteksten</h3><p>Ved shop name-feltet står et eksempel (my-store.myshopify.com → my-store), og "Find my shop name" åbner en kort guide. Hjælpen er valgfri, så Charlotte kan bruge den, mens Emma kan springe den over.</p><p class="vv-norman">Norman: mapping · signifiers</p></div>
+              <figure class="vv-choice-image"><img src="../Images/vuuh/vuuh-guide.webp" alt="Guiden Where to find your shop name i tre trin" /></figure>
+            </article>
+            <article class="vv-choice reveal reveal-left">
+              <div><p class="vv-choice-label">Løser fund 3</p><h3>Feedback og næste skridt</h3><p>Vi designede states frem for kun skærme: connecting, success, fejl og done. Tilbage i Vuuh bekræftes forbindelsen, og brugeren guides videre til "Connect your first brand".</p><p class="vv-norman">Norman: feedback · gulf of evaluation</p></div>
+              <figure class="vv-choice-image"><img src="../Images/vuuh/vuuh-back.webp" alt="Dashboardet med Connected to Shopify og knappen Connect your first brand" /></figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="vv-flow reveal" aria-labelledby="vv-flow-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">Flowet</p>
+            <div class="vv-copy"><h2 id="vv-flow-title">Fra første klik til tilbage i Vuuh</h2><p>Handling, processing, bekræftelse og næste skridt.</p></div>
+          </div>
+          <div class="vv-flow-track">
+            <figure><div class="vv-flow-frame"><img src="../Images/vuuh/vuuh-getstarted.webp" alt="Get started" /></div><figcaption><b>1 · Get started</b>Overblik</figcaption></figure>
+            <figure><div class="vv-flow-frame"><img src="../Images/vuuh/vuuh-connect.webp" alt="Connect to Shopify" /></div><figcaption><b>2 · Shopify</b>Forbind butikken</figcaption></figure>
+            <figure><div class="vv-flow-frame"><img src="../Images/vuuh/vuuh-connecting.webp" alt="Connecting to Shopify" /></div><figcaption><b>3 · Connecting</b>Processing</figcaption></figure>
+            <figure><div class="vv-flow-frame"><img src="../Images/vuuh/vuuh-success.webp" alt="Success" /></div><figcaption><b>4 · Success</b>Bekræftelse</figcaption></figure>
+            <figure><div class="vv-flow-frame"><img src="../Images/vuuh/vuuh-setup.webp" alt="Setup" /></div><figcaption><b>5 · Setup</b>Præferencer</figcaption></figure>
+            <figure><div class="vv-flow-frame"><img src="../Images/vuuh/vuuh-done.webp" alt="Done" /></div><figcaption><b>6 · Done</b>Tilbage til dashboardet</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="vv-section reveal" aria-labelledby="vv-result-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">04 · RESULTAT</p>
+            <div class="vv-copy">
+              <h2 id="vv-result-title">Accessibility-checket gjorde designet mere robust</h2>
+              <p>Resultatet er en interaktiv Figma-prototype af hele flowet fra dashboard til første brand. Vi har ikke testet den med brugere, så vi kan ikke dokumentere effekten. I stedet kvalificerede vi designet med et Accessibility Design Check, hvor vi målte kontrasten i Figma, rettede farverne og målte igen.</p>
+            </div>
+          </div>
+          <div class="vv-stats">
+            <article class="vv-card vv-stat"><h3><span class="vv-before">1,87:1</span><span class="vv-arrow" aria-hidden="true">→</span><span class="vv-after">6,58:1</span></h3><p>Placeholder-teksten i søgefeltet.</p></article>
+            <article class="vv-card vv-stat"><h3><span class="vv-before">2,23:1</span><span class="vv-arrow" aria-hidden="true">→</span><span class="vv-after">4,76:1</span></h3><p>Eksemplet i shop name-guiden. Begge lever nu op til WCAG AA for normal tekst (4,5:1).</p></article>
+          </div>
+          <div class="vv-before-after">
+            <figure class="vv-card"><img src="../Images/vuuh/vuuh-kontrast-foer.webp" alt="Før: lys lilla eksempeltekst målt til 2,23:1 i Figma" /><figcaption>Før <strong class="vv-before">2,23:1</strong></figcaption></figure>
+            <figure class="vv-card"><img src="../Images/vuuh/vuuh-kontrast-efter.webp" alt="Efter: mørkere lilla eksempeltekst målt til 4,76:1 i Figma" /><figcaption>Efter <strong class="vv-after">4,76:1</strong></figcaption></figure>
+          </div>
+          <div class="vv-error">
+            <div class="vv-copy"><h3>Fejl, der hjælper videre</h3><p>Et forkert shop name vises direkte ved feltet med ikon, tekst og rød markering, så farven ikke står alene. Brugeren får at vide, hvad der er galt, og hvad de skal tjekke.</p><p>Løsningen blev præsenteret for Vuuh ved casens afslutning.</p></div>
+            <div class="vv-error-gallery">
+              <figure class="vv-card"><img src="../Images/vuuh/vuuh-fejl-felt.webp" alt="Shop name-feltet med fejlbeskeden We couldn't find this Shopify store" /><figcaption>Fejl direkte ved feltet</figcaption></figure>
+              <figure class="vv-card"><img src="../Images/vuuh/vuuh-fejl-modal.webp" alt="Fejlskærmen We couldn't connect to Shopify med Try again" /><figcaption>Fejl med hjælp til at prøve igen</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vv-section vv-tint reveal" aria-labelledby="vv-reflection-title">
+        <div class="case-vuuh-container vv-two-up">
+          <article class="vv-card vv-reflection" aria-labelledby="vv-reflection-title">
+            <p class="vv-number">05 · REFLEKSION</p>
+            <h2 id="vv-reflection-title">Hvert valg skal svare på et fund</h2>
+            <p>Det største jeg tager med, er at koble hvert designvalg til et konkret fund. Det gjorde det nemmere at sige nej til ting, der var gode idéer, men ikke løste et problem vi havde fundet. Vores fund bygger på ekspertvurderinger, ikke på rigtige brugere, og det skrev vi også i vores Finding Cards. Næste skridt ville derfor være at teste flowet med nye kunder og se, om de faktisk kommer igennem uden hjælp.</p>
+          </article>
+          <article class="vv-card vv-reflection" aria-labelledby="vv-business-title">
+            <p class="vv-number">06 · FORRETNINGSPOTENTIALE</p>
+            <h2 id="vv-business-title">Flere kommer i gang selv</h2>
+            <p>For brugerne betyder løsningen færre steder at gå i stå og mindre tvivl om, hvorvidt butikken er forbundet. For Vuuh er værdien, at flere kan komme i gang uden personlig hjælp. Det kan give færre supporthenvendelser og flere, der når frem til at forbinde et brand, som er dér, produktet begynder at skabe værdi. Vurderingen bygger på vores fund og casens mål om self-service, ikke på målte tal.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-vuuh-container vv-cta-section reveal" aria-labelledby="vv-cta-title">
+        <div class="vv-cta">
+          <div><p class="vv-eyebrow">Case 2 · Prøv det selv</p><h2 id="vv-cta-title">Klik dig gennem prototypen</h2></div>
+          <div class="vv-actions">
+            <a class="vv-button vv-button-primary" href="https://www.figma.com/proto/PEUH5ns1BrzuNaI75Zu5F5/Vuuh---Case-2---3.sem?node-id=125-6&amp;p=f&amp;viewport=130%2C393%2C0.03&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=125%3A6&amp;page-id=0%3A1" target="_blank" rel="noopener">Åbn Figma-prototypen <span aria-hidden="true">↗</span></a>
+            <a class="vv-button vv-button-secondary" href="https://www.figma.com/design/PEUH5ns1BrzuNaI75Zu5F5/Vuuh---Case-2---3.sem?node-id=125-6" target="_blank" rel="noopener">Åbn Figma-filen <span aria-hidden="true">↗</span></a>
+            <a class="vv-button vv-button-secondary" href="../docs/vuuh-ux-audit-summary.pdf" target="_blank" rel="noopener">UX Audit Summary (PDF) <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-vuuh-container vv-sources" aria-labelledby="vv-sources-title">
+        <h2 id="vv-sources-title">Kilder</h2>
+        <p>Nielsen, J.: 10 Usability Heuristics for User Interface Design, Nielsen Norman Group · Norman, D. (2013): The Design of Everyday Things · W3C: WCAG 2.2 – 1.4.1 Brug af farve, 1.4.3 Kontrast (minimum), 3.3.1 Fejlidentifikation, 3.3.3 Forslag til fejlrettelse · Undervisningsmateriale, Product Optimization Case 2, Erhvervsakademi Aarhus</p>
+        <h3>AI-deklaration</h3>
+        <p>I projektet brugte vi generativ AI som sparring i procesarbejdet, bl.a. til at strukturere analyse og syntese og få feedback på designretning og accessibility. Teksten på denne side er formuleret med hjælp fra AI ud fra vores eget materiale. Fund, designvalg, prototype og målinger er gruppens eget arbejde.</p>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div class="contact-card">
+          <h4>Benjamin Vive Høgedal</h4>
+          <p class="muted">benjani698@gmail.com<br />+45 23 83 13 22</p>
+          <div class="socials">
+            <a
+              href="https://www.linkedin.com/in/benjamin-h%C3%B8gedal-1390563bb/"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="../Images/LinkedIn_logo_initials.png.webp"
+                alt="LinkedIn"
+                width="28"
+            /></a>
+            <a
+              href="mailto:benjani698@gmail.com"
+              aria-label="Gmail"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="../Images/GmailLogo.png" alt="Gmail" width="28"
+            /></a>
+            <a
+              href="https://www.instagram.com/benjaminhogedal/"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="../Images/InstaLogo.jpeg" alt="Instagram" width="28"
+            /></a>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <strong>Navigation</strong>
+          <a href="../index.html">Forside</a>
+          <a href="../projects.html">Projekter</a>
+          <a href="../about.html">Om mig</a>
+          <a href="../index.html#contact">Kontakt</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="../js/main.js?v=20260813"></script>
+  </body>
+</html>
