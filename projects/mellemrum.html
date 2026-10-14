@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Case 1: Mellemrum — Benjamin Vive Høgedal</title>
+    <meta name="description" content="Fra React-prototype til en mere robust kulturplatform med gemte tilmeldinger, relateret datamodel og bedre overblik." />
+    <link rel="icon" type="image/png" href="../Images/bvh.png" />
+    <link rel="stylesheet" href="../css/styles.css?v=20260813" />
+    <link rel="stylesheet" href="../css/vuuh.css" />
+    <link rel="stylesheet" href="../css/mellemrum.css" />
+  </head>
+  <body class="case-vuuh case-mellemrum">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="brand-link" aria-label="Gå til forsiden">
+          <img src="../Images/bvh.png" alt="BVH logo" class="brand-logo" />
+          <span class="brand">Benjamin Vive Høgedal</span>
+        </a>
+        <nav class="site-nav" aria-label="Hovednavigation">
+          <a href="../index.html">Forside</a>
+          <a href="../projects.html">Projekter</a>
+          <a href="../about.html">Om mig</a>
+          <a href="../index.html#contact" class="btn">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="case-vuuh-main">
+      <div class="case-vuuh-container">
+        <section class="vv-hero reveal" aria-labelledby="vv-title">
+          <div class="vv-hero-copy">
+            <p class="vv-eyebrow">CASE 1 · PRODUCT OPTIMIZATION</p>
+            <h1 id="vv-title">Fra prototype til en løsning, der holder</h1>
+            <p class="vv-lead">Jeg overtog en hurtigt bygget React-prototype til kulturplatformen Mellemrum og gjorde den mere robust og lettere at bygge videre på.</p>
+            <ul class="vv-tags" aria-label="Projektområder">
+              <li>React</li><li>Supabase</li><li>Datamodel</li><li>Git-workflow</li>
+            </ul>
+            <div class="vv-actions">
+              <a class="vv-button vv-button-primary" href="https://benjaminhogedal.github.io/Mellemrum--BenjaminH/" target="_blank" rel="noopener">Se løsningen <span aria-hidden="true">↗</span></a>
+              <a class="vv-button vv-button-secondary" href="https://github.com/BenjaminHogedal/Mellemrum--BenjaminH" target="_blank" rel="noopener">GitHub-repo <span aria-hidden="true">↗</span></a>
+              <a class="vv-button vv-button-secondary" href="../docs/mellemrum-audit.pdf" target="_blank" rel="noopener">Audit (PDF) <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <figure class="vv-hero-visual">
+            <div class="vv-browser">
+              <div class="vv-browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img class="mm-home-image" src="../Images/mellemrum/mellemrum-home.png" alt="Mellemrums forside med kommende events" />
+            </div>
+            <img class="vv-float" src="../Images/mellemrum/mellemrum-event.png" alt="Eventside med tilmeldingsformularen" />
+          </figure>
+        </section>
+
+        <div class="vv-facts reveal" role="group" aria-label="Faktabjælke">
+          <div><small>Case</small><p>Case 1 – Fra prototype til produktionsklar React-løsning</p></div>
+          <div><small>Min rolle</small><p>Audit, prioritering, kode og test</p></div>
+          <div><small>Team</small><p>Individuelt</p></div>
+          <div><small>Periode</small><p>2 uger · aug.–sep. 2026</p></div>
+        </div>
+      </div>
+
+      <section class="vv-section reveal" aria-labelledby="vv-challenge-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">01 · UDFORDRINGEN</p>
+            <div class="vv-copy">
+              <h2 id="vv-challenge-title">Den så færdig ud – men tilmeldingerne forsvandt</h2>
+              <p>Mellemrum samler koncerter, talks og workshops i Aarhus. Prototypen så færdig ud, men tilmeldinger blev kun skrevet i konsollen, de samme data lå kopieret flere steder, og hver side havde sin egen Supabase-opsætning. Min opgave var at finde de vigtigste problemer, rette dem i den eksisterende kode og få løsningen deployet. Jeg byggede ikke platformen – jeg forbedrede den.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="vv-section vv-tint reveal" aria-labelledby="vv-research-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">02 · UNDERSØGELSE OG PRIORITERING</p>
+            <div class="vv-copy">
+              <h2 id="vv-research-title">Først det, der stoppede brugeren</h2>
+              <p>Jeg gennemgik løsningen lokalt og på den deployede version med DevTools og Lighthouse. Hvert fund kom i en audit med evidens, konsekvens, forslag, prioritet og planlagt test. Jeg prioriterede efter, hvad der stoppede brugeren eller arrangøren: først tilmeldingsflowet og datamodellen, som var casens kernekrav, så feedback ved langsomme svar og billedstørrelser, og til sidst kodekvalitet og overblik.</p>
+            </div>
+          </div>
+          <figure class="vv-wide">
+            <img src="../Images/mellemrum/audit-table.png" alt="Udsnit af audit-tabellen med fund, konsekvenser, forslag, prioritet og planlagt verifikation" loading="lazy" />
+          </figure>
+          <a class="vv-button vv-button-secondary" href="../docs/mellemrum-audit.pdf" target="_blank" rel="noopener">Se hele auditten (PDF) <span aria-hidden="true">↗</span></a>
+          <div class="mm-process" aria-label="Audit, feature branch, test lokalt, pull request, test på GitHub Pages">
+            <span>Audit</span><b aria-hidden="true">→</b><span>Feature branch</span><b aria-hidden="true">→</b><span>Test lokalt</span><b aria-hidden="true">→</b><span>Pull request</span><b aria-hidden="true">→</b><span>Test på GitHub Pages</span>
+          </div>
+          <div class="vv-stats mm-audit-stats">
+            <article class="vv-card vv-stat"><h3>21</h3><p>auditpunkter</p></article>
+            <article class="vv-card vv-stat"><h3>20</h3><p>pull requests</p></article>
+            <article class="vv-card vv-stat"><h3>4</h3><p>tabeller</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="vv-section reveal" aria-labelledby="vv-solution-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">03 · LØSNING</p>
+            <div class="vv-copy"><h2 id="vv-solution-title">Tre forbedringer, der bærer casen</h2></div>
+          </div>
+          <div class="vv-choices">
+            <article class="vv-choice reveal reveal-left">
+              <div>
+                <p class="vv-choice-label">Tilmeldingsflow + datamodel</p>
+                <h3>Tilmeldinger, der faktisk gemmes</h3>
+                <p>Formularen gemmer nu tilmeldingen i Supabase. Datamodellen er delt op i fire relaterede tabeller: events peger på venues, og registrations peger på både events og users. Før lå eventets titel, dato og sted kopieret ind på hver tilmelding, og samme venue stod flere gange. Nu findes hver oplysning ét sted, og en bruger, der tilmelder sig igen, bliver genkendt på e-mailen. Den interne side henter tilmeldinger med event- og brugerdata i ét request.</p>
+              </div>
+              <div class="mm-data-model" role="img" aria-label="Før har events kopierede venuefelter og registrations kopierede event- og brugerfelter. Efter peger events via venueId på venues, og registrations via eventId og userId på events og users." >
+                <section class="mm-model-column" aria-labelledby="mm-before-title">
+                  <h4 id="mm-before-title">FØR</h4>
+                  <article class="mm-table">
+                    <h5>events</h5>
+                    <code>id, title, date, <span class="mm-copied">venueName, venueAddress, venuePostalCode, venueCity, venueWebsite</span>, category, image, price</code>
+                  </article>
+                  <article class="mm-table">
+                    <h5>registrations</h5>
+                    <code>id, createdAt, status, <span class="mm-copied">name, email, eventTitle, eventDate, eventLocation</span></code>
+                  </article>
+                </section>
+                <section class="mm-model-column" aria-labelledby="mm-after-title">
+                  <h4 id="mm-after-title">EFTER</h4>
+                  <article class="mm-table">
+                    <h5>venues</h5>
+                    <code>id, name, address, postalCode, city, website</code>
+                  </article>
+                  <article class="mm-table">
+                    <h5>events</h5>
+                    <code>id, title, date, category, image, price, venueId → venues.id</code>
+                  </article>
+                  <article class="mm-table">
+                    <h5>users</h5>
+                    <code>id, name, email</code>
+                  </article>
+                  <article class="mm-table">
+                    <h5>registrations</h5>
+                    <code>id, createdAt, status, eventId → events.id, userId → users.id</code>
+                  </article>
+                </section>
+              </div>
+            </article>
+            <article class="vv-choice vv-choice-flip reveal reveal-right">
+              <div>
+                <p class="vv-choice-label">Intern side</p>
+                <h3>Overblik for arrangøren</h3>
+                <p>Tilmeldingerne er grupperet efter event med dato og antal, og arrangøren kan søge, sortere og slette med bekræftelse. Eventdato og tilmeldingsdato står hver for sig, fordi én "Dato"-kolonne var tvetydig.</p>
+              </div>
+              <div class="vv-before-after mm-registration-images">
+                <figure class="vv-card"><a href="../Images/mellemrum/registrations-before.png" target="_blank" rel="noopener"><img src="../Images/mellemrum/registrations-before.png" alt="Før: tilmeldinger vist i én lang liste" loading="lazy" /></a><figcaption>Før</figcaption></figure>
+                <figure class="vv-card"><a href="../Images/mellemrum/registrations-after.png" target="_blank" rel="noopener"><img src="../Images/mellemrum/registrations-after.png" alt="Efter: tilmeldinger grupperet efter event med dato og antal" loading="lazy" /></a><figcaption>Efter</figcaption></figure>
+              </div>
+            </article>
+            <article class="vv-choice reveal reveal-left">
+              <div>
+                <p class="vv-choice-label">Robusthed</p>
+                <h3>Feedback og validering</h3>
+                <p>Knappen viser "Sender…", og bagefter kommer en kvittering eller en fejlbesked. Navn og gyldig e-mail er påkrævet – før kunne man tilmelde sig helt uden oplysninger. Siderne viser en loading-tekst, mens data hentes.</p>
+              </div>
+              <figure class="vv-choice-image"><img src="../Images/mellemrum/form-validation.png" alt="Tilmeldingsformular med browserens fejlbesked ved ugyldig e-mail" loading="lazy" /></figure>
+            </article>
+          </div>
+          <section class="mm-improvements" aria-labelledby="mm-improvements-title">
+            <h3 id="mm-improvements-title">Flere forbedringer</h3>
+            <ul class="vv-tags" aria-label="Flere forbedringer">
+              <li>Fælles Supabase-service</li>
+              <li>Fælles datoformatering</li>
+              <li>Fælles Footer</li>
+              <li>Antal beregnet ud fra data (derived state)</li>
+              <li>Afholdte events skjules</li>
+              <li>Søgning på kategori</li>
+              <li>Scroll til toppen ved navigation</li>
+              <li>Opret, redigér og slet events (frivillig udvidelse)</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="vv-section vv-tint reveal" aria-labelledby="vv-result-title">
+        <div class="case-vuuh-container">
+          <div class="vv-section-head">
+            <p class="vv-number">04 · RESULTAT OG DOKUMENTATION</p>
+            <div class="vv-copy">
+              <h2 id="vv-result-title">Testet lokalt og på GitHub Pages</h2>
+              <div class="vv-stats">
+                <article class="vv-card vv-stat"><h3><span class="vv-before">81</span><span class="vv-arrow" aria-hidden="true">→</span><span class="vv-after">87</span></h3><p>Lighthouse Performance · mobil · deployet</p></article>
+                <article class="vv-card vv-stat"><h3><span class="vv-before">5,2 s</span><span class="vv-arrow" aria-hidden="true">→</span><span class="vv-after">2,9 s</span></h3><p>Largest Contentful Paint · mobil · deployet</p></article>
+              </div>
+              <p>Alle 21 punkter blev testet lokalt og langt de fleste igen på GitHub Pages efter merge. Tilmeldingsflowet er kontrolleret hele vejen: ny tilmelding, ny række i Supabase med eventId og userId, vist under det rigtige event. Billedoptimeringen er målt med Lighthouse på mobil på den deployede version før og efter. Det er enkeltmålinger, så de viser en retning, ikke et facit.</p>
+            </div>
+          </div>
+          <div class="vv-before-after mm-result-images">
+            <figure class="vv-card"><img src="../Images/mellemrum/lighthouse-before-after.png" alt="Lighthouse-målinger på mobil før og efter billedoptimering" loading="lazy" /></figure>
+            <figure class="vv-card"><img src="../Images/mellemrum/supabase-registrations.png" alt="Supabase-tabellen registrations med eventId og userId" loading="lazy" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="vv-section vv-tint reveal" aria-labelledby="vv-reflection-title vv-business-title">
+        <div class="case-vuuh-container vv-two-up">
+          <article class="vv-card vv-reflection" aria-labelledby="vv-reflection-title">
+            <p class="vv-number">05 · REFLEKSION</p>
+            <h2 id="vv-reflection-title">Hvad mangler stadig</h2>
+            <p>Desktop-performance (Lighthouse 62) valgte jeg fra, fordi mobil allerede var forbedret. Løsningen mangler stadig fejl- og tom-tilstande: fejler Supabase, bliver siden ved med at "indlæse", og en søgning uden resultater giver et tomt felt. E-mailfeltet mangler en rigtig label, og starter.sql følger ikke den nye datamodel. Næste skridt er de tilstande, tilgængelighed og RLS, så tilmeldinger ikke kan læses af alle. Jeg lærte mest af datamodellen: når data ligger ét sted, bliver resten af koden enklere.</p>
+          </article>
+          <article class="vv-card vv-reflection" aria-labelledby="vv-business-title">
+            <p class="vv-number">06 · FORRETNINGSPOTENTIALE</p>
+            <h2 id="vv-business-title">Flere tilmeldinger, der kommer igennem</h2>
+            <p>Brugerne får tilmeldinger, der rent faktisk kommer igennem, og besked om det. Arrangørerne får overblik pr. event og kan rette events uden at gå ind i databasen. Mellemrum får renere data, som er billigere at bygge videre på.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-vuuh-container vv-cta-section reveal" aria-labelledby="vv-cta-title">
+        <div class="vv-cta">
+          <div><p class="vv-eyebrow">Case 1 · Prøv det selv</p><h2 id="vv-cta-title">Tilmeld dig et event</h2></div>
+          <div class="vv-actions">
+            <a class="vv-button vv-button-primary" href="https://benjaminhogedal.github.io/Mellemrum--BenjaminH/" target="_blank" rel="noopener">Se løsningen <span aria-hidden="true">↗</span></a>
+            <a class="vv-button vv-button-secondary" href="https://github.com/BenjaminHogedal/Mellemrum--BenjaminH" target="_blank" rel="noopener">GitHub-repo <span aria-hidden="true">↗</span></a>
+            <a class="vv-button vv-button-secondary" href="../docs/mellemrum-audit.pdf" target="_blank" rel="noopener">Audit (PDF) <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-vuuh-container vv-sources" aria-labelledby="vv-sources-title">
+        <h2 id="vv-sources-title">Kilder</h2>
+        <ul>
+          <li>Startprojekt: Mellemrum React-prototype af Rasmus Cederdorff, Erhvervsakademi Aarhus</li>
+          <li>Casebeskrivelse: Case 1 – Fra prototype til produktionsklar React-løsning, Product Optimization, EAAA</li>
+        </ul>
+        <h3>Eget bidrag</h3>
+        <p>Startprojektet og den visuelle identitet er lavet af underviseren.</p>
+        <h3>AI-deklaration</h3>
+        <p>Jeg brugte generativ AI (ChatGPT) som sparringspartner, når jeg var i tvivl om en løsning undervejs, og til at strukturere audit-skabelonen. Fund, prioritering, kode og test er mit eget arbejde. Teksten på denne side er formuleret med hjælp fra AI ud fra mit eget materiale.</p>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-inner">
+        <div class="contact-card">
+          <h4>Benjamin Vive Høgedal</h4>
+          <p class="muted">benjani698@gmail.com<br />+45 23 83 13 22</p>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/benjamin-h%C3%B8gedal-1390563bb/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="../Images/LinkedIn_logo_initials.png.webp" alt="LinkedIn" width="28" /></a>
+            <a href="mailto:benjani698@gmail.com" aria-label="Gmail" target="_blank" rel="noopener noreferrer"><img src="../Images/GmailLogo.png" alt="Gmail" width="28" /></a>
+            <a href="https://www.instagram.com/benjaminhogedal/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img src="../Images/InstaLogo.jpeg" alt="Instagram" width="28" /></a>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <strong>Navigation</strong>
+          <a href="../index.html">Forside</a>
+          <a href="../projects.html">Projekter</a>
+          <a href="../about.html">Om mig</a>
+          <a href="../index.html#contact">Kontakt</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="../js/main.js?v=20260813"></script>
+  </body>
+</html>

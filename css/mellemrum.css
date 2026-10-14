@@ -1,0 +1,227 @@
+body.case-mellemrum {
+  --ink: #1f3b33;
+  --brand: #1f3b33;
+  --purple: #1f3b33;
+  --lav: #e5ede8;
+  --lav2: #f3efe7;
+  --vv-text: #24342f;
+  background: #f3efe7;
+  color: #18231f;
+}
+
+body.case-mellemrum .vv-hero h1,
+body.case-mellemrum .vv-facts p,
+body.case-mellemrum .vv-choice h3,
+body.case-mellemrum .vv-reflection h2,
+body.case-mellemrum .vv-cta h2,
+body.case-mellemrum .vv-sources h2 {
+  color: #1f3b33;
+}
+
+body.case-mellemrum .vv-eyebrow,
+body.case-mellemrum .vv-number,
+body.case-mellemrum .vv-choice-label::first-letter {
+  color: #1f3b33;
+}
+
+body.case-mellemrum .vv-tint {
+  background: #f3efe7;
+}
+
+body.case-mellemrum .vv-button-primary {
+  background: #1f3b33;
+  color: #fff;
+}
+
+body.case-mellemrum .vv-button-secondary {
+  border-color: #1f3b33;
+  color: #1f3b33;
+}
+
+body.case-mellemrum .vv-tags li {
+  border: 1px solid rgb(31 59 51 / 15%);
+  background: #fff;
+  color: #1f3b33;
+}
+
+body.case-mellemrum .vv-cta {
+  background: #1f3b33;
+  color: #fff;
+}
+
+body.case-mellemrum .vv-cta h2,
+body.case-mellemrum .vv-cta .vv-eyebrow {
+  color: #fff;
+}
+
+body.case-mellemrum .vv-cta .vv-button-secondary {
+  border-color: #fff;
+  background: transparent;
+  color: #fff;
+}
+
+body.case-mellemrum .vv-stat .vv-after {
+  color: #1f3b33;
+}
+
+body.case-mellemrum .vv-browser > .mm-home-image {
+  width: 100%;
+  aspect-ratio: 16 / 8.6;
+  object-fit: cover;
+  object-position: top;
+}
+
+body.case-mellemrum .mm-process {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 26px 0 34px;
+}
+
+body.case-mellemrum .mm-process span {
+  padding: 9px 13px;
+  border: 1px solid rgb(31 59 51 / 16%);
+  border-radius: 999px;
+  background: #fff;
+  color: #1f3b33;
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+body.case-mellemrum .mm-process b {
+  color: #1f3b33;
+}
+
+body.case-mellemrum .mm-audit-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 0;
+}
+
+body.case-mellemrum .mm-audit-stats .vv-stat h3 {
+  color: #1f3b33;
+}
+
+body.case-mellemrum .mm-data-model {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  min-width: 0;
+}
+
+body.case-mellemrum .mm-model-column {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgb(31 59 51 / 15%);
+  border-radius: 16px;
+  background: #f3efe7;
+}
+
+body.case-mellemrum .mm-model-column > h4 {
+  margin: 0 0 2px;
+  color: #1f3b33;
+  font-size: 0.8rem;
+  letter-spacing: 0.13em;
+}
+
+body.case-mellemrum .mm-table {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d7ddd8;
+  border-radius: 10px;
+  background: #fff;
+}
+
+body.case-mellemrum .mm-table h5 {
+  margin: 0 0 7px;
+  color: #1f3b33;
+  font-size: 0.9rem;
+}
+
+body.case-mellemrum .mm-table code {
+  display: block;
+  overflow-wrap: anywhere;
+  color: #293a34;
+  font-size: 0.73rem;
+  line-height: 1.6;
+  white-space: normal;
+}
+
+body.case-mellemrum .mm-copied {
+  color: #777e79;
+  text-decoration: line-through;
+  text-decoration-color: #a34c40;
+  text-decoration-thickness: 1.5px;
+}
+
+body.case-mellemrum .mm-registration-images {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+
+body.case-mellemrum .mm-registration-images figure,
+body.case-mellemrum .mm-result-images figure {
+  min-width: 0;
+}
+
+body.case-mellemrum .mm-registration-images figure,
+body.case-mellemrum .mm-registration-images a,
+body.case-mellemrum .mm-registration-images img {
+  display: block;
+  width: 100%;
+}
+
+body.case-mellemrum .mm-registration-images img {
+  height: auto;
+}
+
+body.case-mellemrum .mm-registration-images figcaption {
+  padding: 10px 12px;
+  color: #1f3b33;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+body.case-mellemrum .mm-improvements {
+  margin-top: 36px;
+}
+
+body.case-mellemrum .mm-improvements h3 {
+  margin: 0 0 14px;
+  color: #1f3b33;
+  font-size: 1.3rem;
+}
+
+body.case-mellemrum .mm-improvements .vv-tags {
+  margin-bottom: 0;
+}
+
+body.case-mellemrum .mm-improvements .vv-tags li:nth-child(3n + 1) {
+  border-color: transparent;
+  background: #ddf56b;
+}
+
+body.case-mellemrum .mm-result-images img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 700px) {
+  body.case-mellemrum .mm-data-model,
+  body.case-mellemrum .mm-registration-images,
+  body.case-mellemrum .mm-audit-stats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.case-mellemrum .mm-process {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  body.case-mellemrum .mm-process b {
+    transform: rotate(90deg);
+  }
+}
