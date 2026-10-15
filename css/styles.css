@@ -1453,6 +1453,8 @@ body {
 .story-gallery-photo:nth-child(4) {
   grid-column: 3 / 5;
   grid-row: 3 / 5;
+  object-fit: contain;
+  background-color: #6047c7;
 }
 .about-subtitle {
   margin: 18px 0 8px;
